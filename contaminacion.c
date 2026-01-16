@@ -48,7 +48,7 @@ void ingresarDatos(Zona *zona)
         "Humedad relativa (0 - 100 %): ", 0, 100);
 }
 
-// Cargar históricos (opcional)
+// Cargar históricos
 void cargarDatos(Zona *zonas)
 {
     FILE *f = fopen("datos.txt", "r");
@@ -212,3 +212,4 @@ void generarReporte(Zona *zonas)
 
     fclose(f);
 }
+
